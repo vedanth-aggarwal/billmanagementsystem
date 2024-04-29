@@ -1,7 +1,7 @@
-############################################CREATED BY MALEPATI NAGENDRA DEEPAK codespeedy project 1#################################
 from tkinter import *
 import random
 
+# Bill Application Class ( Object Oriented Programming ) 
 class Bill_App:
     def __init__(self,root):
         self.root = root
@@ -42,14 +42,13 @@ class Bill_App:
         self.tax_groc = StringVar()
         self.tax_other = StringVar()
 
-
-        #===================================
+        # Colors
         bg_color = "#074463"
         fg_color = "white"
         lbl_color = 'white'
         
-        #Title of App
-        title = Label(self.root,text = "Deepak Billing Software",bd = 12,relief = GROOVE,fg = fg_color,bg = bg_color,font=("times new roman",30,"bold"),pady = 3).pack(fill = X)
+        #App Title
+        title = Label(self.root,text = "Billing Software",bd = 12,relief = GROOVE,fg = fg_color,bg = bg_color,font=("times new roman",30,"bold"),pady = 3).pack(fill = X)
 
         #==========Customers Frame==========#
         F1 = LabelFrame(text = "Customer Details",font = ("time new roman",12,"bold"),fg = "gold",bg = bg_color,relief = GROOVE,bd = 10)
